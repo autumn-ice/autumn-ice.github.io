@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>东秦Robocon实验室比赛信息</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<style type="text/css">
+	#container{
+		width: 100%;
+		height: 1400px;
+		background: #29b8ec;
+	}
+	#header img{
+		width: 1440px;
+		height: 170px;
+		margin: 0px auto;
+		box-shadow: 0 0 20px black;
+	}
+	#header{
+		width: 1440px;
+		height: 200px;
+		margin: 0px auto;
+	}
+	#daohang{
+		width: 1000px;
+		height: 60px;
+		float: right;
+		background: #29b8ec;
+		box-shadow: 0 0 20px black;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+
+	}
+	#daohang li{
+		width: 180px;
+		height: 60px;
+		line-height: 60px;
+		float: right;
+		list-style: none;
+	}
+	#daohang a{
+		color: white;
+		font-size:20px;
+	}
+	#daohang a:hover{
+		font-size: 23px;
+		color: white;
+		background: #29b8ec;
+	}
+	#xingb a{
+		color: black;
+	}
+	#main{
+		width: 1400px;
+		height:900px;
+		background: white;
+		border-radius: 15px;
+		text-align: center;
+		box-shadow: 0 0 10px black;
+		margin: 0 auto;
+	}
+	#jianlan{
+		width: 370px;
+		height: 850px;
+		background: #29b8ec;
+		border-radius: 15px;
+		box-shadow: 0 0 10px white;
+		margin-left: 20px;
+		margin-top:20px;
+		float: left;
+	}
+	#wenzhang{
+		width: 970px;
+		height: 820px;
+		background: #29b8ec;
+		border-radius: 15px;
+		text-align: center;
+		box-shadow: 0 0 10px white;
+		margin-right:20px;
+		margin-top: 20px; 
+		float: right;
+		overflow: auto;	
+	}
+	#wenzhang a{
+		width: 80px;
+		height: 80px;
+		font-size: 20px;
+		font-family: "SimHei";
+		text-align: center;
+		line-height: 80px;
+		background: #29b8ec;
+		border-radius: 40px;
+		float: left;
+		margin-left: 30px;
+		margin-top: -30px;
+	}
+	#wenzhang a:hover{
+		font-size: 23px;
+		color: white;
+	}
+	.xinxi{
+		width: 930px;
+		height: 80px;
+		border-radius: 15px;
+		box-shadow: 0 0 15px #29b8ec;
+		background: url(../img/huise.jpg);
+		background-size: cover; 
+		margin: 0px auto;
+		margin-top:15px;
+	}
+	#huodongxinxi{
+		width: 186px;
+		height: 186px;
+		border-radius: 15px;
+		float: left;
+		margin: 20px;
+		box-shadow: 0 0 25px red;
+		background: red;
+	}
+	#huodongxinxi a{
+		font-size: 23px;
+		list-style: none;
+		line-height: 200px;
+		color: white;
+
+	}
+	#huodongxinxi a:hover{
+		border-radius: 15px;
+		display: block;
+		width: 200px;
+		height: 200px;
+		background: red;
+		font-size: 25px;
+		box-shadow: 0 0 30px red;
+	}
+	#zhaoxinxinxi{
+		width: 120px;
+		height: 280px;
+		border-radius: 15px;
+		float: right;
+		margin: 0px;
+		margin-top: 20px;
+		margin-right: 20px;
+		text-align: center;
+		box-shadow: 0 0 23px #88cf65;
+		background: #88cf65;
+		padding-top: 55px;
+	}
+	#zhaoxinxinxi a{
+		font-size: 23px;
+		color: white;
+		line-height: 50px;
+	}
+	#zhaoxinxinxi a:hover{
+		border-radius: 15px;
+		display: block;
+		width: 70px;
+		height: 205px;
+		margin: 0px auto;
+		background: #88cf65;
+		font-size: 25px;
+		font-color:white;
+		box-shadow: 0 0 20px #3bb244;
+	}
+	#bisaixinxi{
+		width: 190px;
+		height: 120px;
+		border-radius: 15px;
+		float: right;
+		margin-top: 5px;
+		margin-right: 20px;
+		box-shadow: 0 0 15px blue;
+		background: #2267cf;
+		border: 2px solid yellow;
+	}
+	#bisaixinxi a{
+		font-size: 23px;
+		color: white;
+		line-height: 120px;
+	}
+	#bisaixinxi a:hover{
+		border-radius: 15px;
+		display: block;
+		width: 200px;
+		height: 130px;
+		margin: 0px auto;
+		margin-left: -5px;
+		margin-top:-5px;	
+		background: #2267cf;
+		font-size: 25px;
+		font-color:white;
+		line-height: 130px;
+		box-shadow: 0 0 20px #2267cf;
+	}
+	#title{
+		font-size: 28px;
+		font-family: "SimHei";
+		margin: 0px auto;
+		list-style: none;
+	}
+	#bottomer{
+		width: 590px;
+		margin: 0px auto;
+		margin-top: 40px;
+		border-radius: 20px;
+		padding: 10px;
+		padding-bottom: 20px;
+		box-shadow: 0 0 5px black;
+	}
+	#bottomer li{
+		font-size: 18px;
+		margin: 0px auto;
+		margin-top: 15px;
+		text-align: center;
+		list-style: none;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="../img/header.png">
+			<div id="daohang">
+				<li id="xingb"><a href="../index/richangxinxi.html" title="日常信息"><b>日常信息</b></a></li>
+				<li><a href="../index/jinglifenxiang.html" title="经历分享"><b>经历分享</b></a></li>
+				<li><a href="../index/jiechuduiyuan.html" title="杰出队员"><b>杰出队员</b></a></li>
+				<li><a href="../index/chengyuanzonglan.html" title="成员总览"><b>成员总览</b></a></li>
+				<li><a href="../index/wangjiejiaji.html" title="往届佳绩"><b>往届佳绩</b></a></li>
+			</div>
+		</div>
+		<div id="main">
+			<div id="jianlan">
+				<div id="huodongxinxi">
+					<a href="richangxinxi.html"><b>活动信息</b></a>
+				</div>
+				<div id="zhaoxinxinxi">
+					<a href="zhaoxinxinxi.html"><b>招<br>新<br>信<br>息</b></a>
+				</div>
+				<div id="bisaixinxi">
+					<a href="bisaixinxi.html"><b>比赛信息</b></a>
+				</div>
+
+			</div>
+			<div id="wenzhang">
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>	
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>
+				<div class="xinxi"></div>	
+				<div class="xinxi"></div>
+
+			</div>
+
+		</div>
+		<div id="bottomer">
+				<li>(冀）东北大学秦皇岛分校Robocon实验室</li>
+				<li>通信地址：河北省秦皇岛市经济技术开发区泰山路143号</li>
+				<li>微信公众号：domkin战队（gh_b48b244c1b74)</li>
+				<li>qq公众号：3289270752</li>
+		</div>
+	</div>
+	
+</body>
+</html>

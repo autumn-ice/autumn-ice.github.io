@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实验室杰出成员</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<style type="text/css">
+	#container{
+		width: 100%;
+		height: 7200px;
+		background: #29b8ec;
+	}
+	#header img{
+		width: 1440px;
+		height: 170px;
+		margin: 0px auto;
+		box-shadow: 0 0 20px black;
+	}
+	#header{
+		width: 1440px;
+		height: 200px;
+		margin: 0px auto;
+	}
+	#daohang{
+		width: 1000px;
+		height: 60px;
+		float: right;
+		background: #29b8ec;
+		box-shadow: 0 0 20px black;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+
+	}
+	#daohang li{
+		width: 180px;
+		height: 60px;
+		line-height: 60px;
+		float: right;
+		list-style: none;
+	}
+	#daohang a{
+		color: white;
+		font-size:20px;
+	}
+	#daohang a:hover{
+		font-size: 23px;
+		color: white;
+		background: #29b8ec;
+	}
+	#xingb a{
+		color: black;
+	}
+	#main{
+		width: 1200px;
+		height:6600px;
+		background: white;
+		border-radius: 30px;
+		padding-top:70px; 
+		text-align: center;
+		box-shadow: 0 0 10px black;
+		margin: 0 auto;
+
+	}
+	#xinxi{
+		text-align: left;
+	}
+	#xinxi p{
+		font-size:20px;
+		font-family: "SimHei";
+		line-height: 45px;
+		margin-top:10px;
+		margin-left: 170px;
+		margin-right: 170px;
+	}
+	#xinxi li{
+		font-size:21px;
+		list-style: none;
+		margin-top: 40px;
+		margin-left: 170px;
+
+	}
+	/*#xinxi img{
+		width: 700px;
+		height: 590px;
+		margin: 0px auto;
+	}*/
+	#xinxi a{
+		font-size: 18px;
+		color: red;
+		margin-left: 200px;
+		float: left;
+		line-height: 30px;
+		font-family: "Microsoft YaHei";
+
+	}
+	#xinxi a:hovor{
+		font-size:20px;
+		color: blue;
+	}
+	#wenzhang a{
+		width: 80px;
+		height: 80px;
+		font-size: 20px;
+		font-family: "SimHei";
+		text-align: center;
+		line-height: 80px;
+		background: #29b8ec;
+		border-radius: 40px;
+		float: left;
+		margin-left: 30px;
+		margin-top: -30px;
+	}
+	#wenzhang a:hover{
+		font-size: 23px;
+		color: white;
+	}
+	#title{
+		font-size: 28px;
+		font-family: "SimHei";
+		margin: 0px auto;
+		list-style: none;
+	}
+	#jieshao{
+		width: 1200px;
+		height: 330px;
+		box-shadow: 0 0 35px #29b8ec;
+		text-align: left;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaox{
+		width: 1200px;
+		height: 310px;
+		box-shadow: 0 0 35px #29b8ec;
+		text-align: left;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaoc{
+		width: 1200px;
+		height: 460px;
+		box-shadow: 0 0 23px #29b8ec;
+		text-align: left;
+		margin: 0px auto;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaod{
+		width: 1200px;
+		height: 370px;
+		box-shadow: 0 0 23px #29b8ec;
+		text-align: left;
+		margin: 0px auto;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaol{
+		width: 1200px;
+		height: 390px;
+		box-shadow: 0 0 23px #29b8ec;
+		text-align: left;
+		margin: 0px auto;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaow{
+		width: 1200px;
+		height: 360px;
+		box-shadow: 0 0 35px #29b8ec;
+		text-align: left;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaoz{
+		width: 1200px;
+		height: 280px;
+		box-shadow: 0 0 23px #29b8ec;
+		text-align: left;
+		margin: 0px auto;
+		margin-top: 35px;
+		background: white; 
+	}
+	#jieshaoj{
+		width: 1200px;
+		height: 360px;
+		box-shadow: 0 0 23px #29b8ec;
+		text-align: left;
+		margin: 0px auto;
+		margin-top: 35px;
+		background: white; 
+	}
+	#huojiangjinglid{
+		font-size: 18px;
+		font-family:"SimHei";
+		margin-right: 100px;
+		line-height: 40px;
+	}
+	.xingming{
+		font-size: 20px;
+		font-family:"Microsoft YaHei";
+		padding: 0px;
+		padding-top: 23px;
+		line-height:10px;
+	}
+	.aihao{
+		font-size: 18px;
+		font-family:"SimHei";
+		line-height: 0px;
+
+	}
+	.nianji{
+		font-size: 18px;
+		font-family:"SimHei";
+		line-height: 0px;
+	}
+	.zhuanye{
+		font-size: 18px;
+		font-family:"SimHei";
+		line-height: 0px;
+	}
+	.huojiangjingli{
+		font-size: 18px;
+		font-family:"SimHei";
+		line-height: 35px;
+		margin-right: 100px;
+	}
+	.fangxiang{
+		font-size: 18px;
+		font-family:"SimHei";
+		line-height: 0px;
+	}
+	#huojiangjinglic{
+		font-size: 18px;
+		font-family:"SimHei";
+		margin-right: 100px;
+		line-height: 35px;
+	}
+	#tishi{
+		width: 800px;
+		height: 70px;
+		text-align: center;
+		margin: 0px auto;
+	}
+	#tishi li{
+		list-style: none;
+		font-family: "Microsoft YaHei";
+		margin: 0px auto;
+		margin-top:50px;
+	}
+	#bottomer{
+		width: 590px;
+		margin: 0px auto;
+		margin-top: 40px;
+		border-radius: 20px;
+		padding: 10px;
+		padding-bottom: 20px;
+		box-shadow: 0 0 5px black;
+	}
+	#bottomer li{
+		font-size: 18px;
+		margin: 0px auto;
+		margin-top: 15px;
+		text-align: center;
+		list-style: none;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="../img/header.png">
+			<div id="daohang">
+				<li><a href="../index/richangxinxi.html" title="日常信息"><b>日常信息</b></a></li>
+				<li><a href="../index/jinglifenxiang.html" title="经历分享"><b>经历分享</b></a></li>
+				<li id="xingb"><a href="../index/jiechuduiyuan.html" title="杰出队员"><b>杰出队员</b></a></li>
+				<li><a href="../index/chengyuanzonglan.html" title="成员总览" ><b>成员总览</b></a></li>
+				<li><a href="../index/wangjiejiaji.html" title="往届佳绩" ><b>往届佳绩</b></a></li>
+			</div>
+		</div>
+		<div id="main">
+			<div id="wenzhang">
+				<a href="../index.html">主页</a>
+				<li id="title">东秦robocon实验室杰出成员</li>
+			</div>
+			<div id="xinxi">
+				<li><b>一、实验室3名成员被评为东北大学秦皇岛分校2019年度十佳双创之星</b></li>
+				<p>&nbsp&nbsp&nbsp&nbsp曾在实验室任职的控制工程学院2016级测控技术与仪器专业学生陶帅帅、2017级自动化专业学生包晓雨、2017级机械工程专业学生陈超被评选为东北大学秦皇岛分校2019年度十佳双创之星。</p>
+				<a href="../img/shuangchuang.png" target="_blank"><u>附件：东北大学秦皇岛分校2019年度十佳双创之星信息</u></a>
+				<li><b>二、实验室优秀成员介绍</b></li>
+				<div id="jieshaox">
+					<li class="xingming"><b>邢峻涛</b></li>
+					<li class="nianji">年级：2017级</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：摄影</li>
+					<li class="huojiangjingli">获奖经历：曾经获得过国家级奖学金，成绩优异，表现突出，被评为校三好学生、校优秀学生干部以及校优秀团干部等。</li>
+				</div>
+				<div id="jieshaoc">
+					<li class="xingming"><b>陈思佳</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：运动控制与定位系统</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：学习、轮滑、跑步</li>
+					<li id="huojiangjinglic">获奖经历：曾获得国家励志奖学金等综合奖学金，第十一届全国大学生数学竞赛全国一等奖、亚太地区大学生数学建模竞赛一等奖、Mathorcup 数学建模竞赛全国一等奖、河北省数学竞赛一等奖、第十届全国大学生三创赛省二等奖、互联网+校赛一等奖、创青春校赛一等奖、节能减排大赛校二等奖和校三等奖、美赛建模大赛三等奖、经济学院路演赛三等奖，模拟课堂大赛校三等奖，新生杯象棋亚军、现拥有两项实用新型专利。</li>
+				</div>
+				<div id="jieshaol">
+					<li class="xingming"><b>张盛龙</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：踢球传动</li>
+					<li class="zhuanye">专业：机械</li>
+					<li class="aihao">爱好：摄影、滑雪</li>
+					<li class="huojiangjingli">获奖经历：正在参与并准备3D打印大赛、高教杯制图大赛以及Robocon大赛，现比赛推迟；获得东北大学秦皇岛分校第九届节能减排社会实践与科技竞赛校二等奖；认真钻研机械技术应用，经过努力获得了cswp证书。</li>
+				</div>
+				<div id="jieshaow">
+					<li class="xingming"><b>王振国</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：电机控制和仿真模拟</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：跑步、阅读</li>
+					<li class="huojiangjingli">获奖经历：曾获得数项校赛一、二、三等奖，美赛建模大赛三等奖，现有发明专利一项和多项省赛在审项目。</li>
+				</div>
+				<div id="jieshaoz">
+					<li class="xingming"><b>张钧杰</b></li>
+					<li class="nianji">年级：2017级</li>
+					<li class="fangxiang">负责方向：机器人运动控制</li>
+					<li class="zhuanye">专业：测控技术与仪器</li>
+					<li class="huojiangjingli">获奖经历：曾多次获得校级奖项，获得过全国大学生电子设计竞赛全国一等奖等。</li>
+				</div>
+				<div id="jieshaod">
+					<li class="xingming"><b>戴佳祺</b></li>
+					<li class="nianji">年级：2019级</li>
+					<li class="fangxiang">负责方向：团队事务管理</li>
+					<li class="zhuanye">专业：信息管理与信息系统</li>
+					<li class="aihao">爱好：宅图书馆、穷游/li>
+					<li id="huojiangjinglid">获奖经历：东北大学秦皇岛分校校辩论赛半决赛入围选手，参与过三创赛、获得数学建模校赛三等奖，获得过校级奖学金一次，获得2019华东cio大会优秀志愿者称号。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>邵诗尧</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：机器人所需零件的加工以及加工设备的管理与维护</li>
+					<li class="zhuanye">专业：机械工程</li>
+					<li class="aihao">爱好：喜欢摄像和捕捉美丽的图景</li>
+					<li class="huojiangjingli">经历：曾任控制工程学院科技创新部副部长，为RC机械组成员。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>马蔡玉</b></li>
+					<li class="nianji">年级：2017级</li>
+					<li class="fangxiang">负责方向：机械组机器人设计、建模及搭建</li>
+					<li class="zhuanye">专业：车辆工程</li>
+					<li class="aihao">爱好：喜爱机甲，机车，对未来人工智能感兴趣</li>
+					<li class="huojiangjingli">获奖经历：被评为控制工程学院办公室优秀干事，获得过校三等奖学金。</li>
+				</div>
+				<div id="jieshaoj">
+					<li class="xingming"><b>陈悦江</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：传球、踢球、仿真</li>
+					<li class="zhuanye">专业：测控技术与仪器 </li>
+					<li class="aihao">爱好：喜爱篮球、唱歌、密室逃脱</li>
+					<li class="huojiangjingli">获奖经历：曾获得亚太地区大学生数学建模竞赛一等奖、Mathorcup大学生数学建模竞赛一等奖、“琢玉杯”新生歌手大赛冠军、“晨曦杯”篮球赛团体冠军等。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>李雅军</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：上位机的程序编写</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：喜欢打羽毛球，也喜欢相互切磋</li>
+					<li class="huojiangjingli">经历：有丰富的实验室工作经历，现拥有一份软件著作权及一项发明专利。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>李骐兆</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：上位机方向和检阅下位机代码</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：喜爱并且擅长算法编写，并且在数学建模比赛中成功编写合理代码并实现其功能</li>
+					<li class="huojiangjingli">座右铭：只要还有明天，今天永远是起跑线。</li>
+				</div>
+				<div id="jieshaoj">
+					<li class="xingming"><b>王书豪</b></li>
+					<li class="nianji">年级：2019级</li>
+					<li class="fangxiang">负责方向：网站运营及财务</li>
+					<li class="zhuanye">专业：信息管理与信息系统</li>
+					<li class="aihao">爱好：摄影、羽毛球、阅读等</li>
+					<li class="huojiangjingli">经历：有丰富的部门工作经验，获得过多次学校及社会摄影比赛奖项，获得过大学生组织管理能力大赛决赛一等奖及校综合二等奖学金等。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>宫美琪</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：qq号及微信公众号的运营</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：音乐</li>
+					<li class="huojiangjingli">经历：在大二期间完成了在网易公司以及今日校园公司的实习。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>王烁楠</b></li>
+					<li class="nianji">年级：2019级</li>
+					<li class="fangxiang">负责方向：运动控制、定位系统及仿真模拟</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：爱好网上冲浪、阅读</li>
+					<li class="huojiangjingli">经历：积极参与实验室及部门工作，获得过控制工程学院院部门优秀干事称号。</li>
+				</div>
+				<div id="jieshao">
+					<li class="xingming"><b>赵志强</b></li>
+					<li class="nianji">年级：2019级</li>
+					<li class="fangxiang">负责方向：底盘和电机</li>
+					<li class="zhuanye">专业：自动化</li>
+					<li class="aihao">爱好：动漫</li>
+					<li class="huojiangjingli">经历：参与过ACM暑期培训，参与过智能车项目</li>
+				</div>
+				<div id="jieshaoj">
+					<li class="xingming"><b>赵长鑫</b></li>
+					<li class="nianji">年级：2018级</li>
+					<li class="fangxiang">负责方向：机器人的机械机构设计以及制作</li>
+					<li class="zhuanye">专业：车辆工程</li>
+					<li class="aihao">爱好：3D建模</li>
+					<li class="huojiangjingli">介绍：爱好并擅长3D建模，曾取得solidworks的全球认证CSWP，会3D打印，能使用实验室各种仪器及工具，动手能力极强。乐于将自己的课余时间投入科创竞赛提升自我</li>
+				</div>
+				<div id="tishi"><li><b><em>FAR MORE THAN THAT...</em></b></li></div>
+
+			</div>
+
+		</div>
+		<div id="bottomer">
+				<li>(冀）东北大学秦皇岛分校Robocon实验室</li>
+				<li>通信地址：河北省秦皇岛市经济技术开发区泰山路143号</li>
+				<li>微信公众号：domkin战队（gh_b48b244c1b74)</li>
+				<li>qq公众号：3289270752</li>
+		</div>
+	</div>
+	
+</body>
+</html>
