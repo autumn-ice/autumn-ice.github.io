@@ -4,395 +4,397 @@
 	<meta charset="UTF-8">
 	<title>东北大学秦皇岛分校Robocon实验室</title>
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./style.css">
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); //開始运行
+  function time() {
+    clearTimeout(t); //清除定时器
+    dt = new Date();
+    var y = dt.getFullYear();
+    var mt = dt.getMonth() + 1;
+    var day = dt.getDate();
+    var h = dt.getHours(); //获取时
+    var m = dt.getMinutes(); //获取分
+    var s = dt.getSeconds(); //获取秒
+    document.querySelector(".showTime").innerHTML =
+      "当前时间：" +
+      y +
+      "年" +
+      mt +
+      "月" +
+      day +
+      "日" +
+      " " +
+      " " +
+      h +
+      "时" +
+      m +
+      "分" +
+      s +
+      "秒";
+    t = setTimeout(time, 1000); //设定定时器，循环运行
+  }
+</script>
 <style type="text/css">
-	#zhuye{
+	#ZHUYE{
 		width: 100%;
 		height: 100%;
-		margin: 0px auto;
-		padding: 0px;
-		background: #29b8ec;
+		background: white;
 	}
 	#container{
-		width: 1515px;
-		margin: 0px auto;	
-		padding: 0px;
-		background: /*blue*/#29b8ec;
+		width: 100%;
+		height: 2100px;
+		background: white;
+	}
+
+	.showTime{
+		float: right;
+		color: white;
+		margin-right: 200px;
+		line-height: 45px;
+	}
+	#footer{
+		width: 800px;
+		height: 45px;
+		font-size: 12px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-color: white;
+		background: #0f3b74;
+		float: right;
+		line-height: 30px;
+	}
+	#foot a{
+		float: right;
+		color:white;
+		margin-right: 30px;
+		line-height: 45px;
+
 	}
 	#header{
-		width: 1515px;
+		width: 100%;
+		height: 100px;
+		background: #0f3b74;
+		position: fixed;
+		top: 0px;
+		box-shadow: 0 0 13px black;
+	}
+	#head{
+		width: 1720px;
+		height: 100px;
 		margin: 0px auto;
 	}
-	#heal img{
-		width:/*1440px*/100%;
-		padding:0px;
-		margin:0px auto;
-		box-shadow: 0 0 5px black;
+	#header-left{
+		width: 650px;
+		height: 100px;
+		float: left;
+		background: #0f3b74;
 	}
-	/*#heal{
-		width:1440px;
-		height:175px;
-		text-align: center;
-		margin:0px auto;
-	}*/
-	#daohang{
-		width: 1515px;
-		height: 58px;
-		clear: both;
-		margin-top: 3px;
-		margin: 0px auto;
-		border-bottom-left-radius: 15px;
-		border-bottom-right-radius: 15px;
-		background: url(./img/heaou.jpg) ;
-		background-repeat: no-repeat;
-		background-size: cover; 
-		box-shadow: 0 0 5px black;
+	#header-left img{
+		width: 435px;
+		height: 70px;
+		padding-top: 15px;
+		margin-left: 160px;
+		float: left;
 	}
-	#daohang li{
-		width: 252px;
-		height: 60px;
+	#header-right{
+		width: 760px;
+		height: 50px;
+		float: right;
+		margin-top: 5px;
+		margin-right: 150px;
+		display: block;
+		background: #0f3b74;
+	}
+
+	#header-right li{
+		width: 120px;
+		height: 50px;
 		float: left;
 		list-style:none;
 		text-align: center;
 	}
 
-	#daohang a{
+	#header-right a{
+		width: 140px;
+		height: 50px;
+		font-size: 17px;
+		font-family:  "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 		color: white;
-		line-height: 60px;
-		font-size: 22px;
-		display: block;
-		font-family: "Microsoft YaHei"；
+		float: left;
+		margin: 0px auto;
+		margin-left:5px;
+		line-height: 45px;
 
 	}
-	#daohang a:hover{
-		font-size: 23px;
+	#header-right a:hover{
+		font-size: 18px;
 		color: white;
 		background: #29b8ec;
 	}
-	#main{
-		width: 1440px;
-		height:1070px;
-		margin:0px auto;
+	#man{
+		width: 1400px;
+		height: 1140px;
+		background: #0f3b74;
+		border:1px solid #0f3b74;
+		margin: 0px auto;
+		margin-top: 100px;
+		clear: both;
+		box-shadow: 0 0 7px grey;
+	}
+	#man img{
+		width: 1400px;
+		height: 800px;
+	}
+	#guanyu{
+		width: 1360px;
+		height: 300px;
+		background: #e1e7eb;
+		margin: 0px auto;
 		margin-top: 20px;
-		border-radius: 15px;
-		background: #1a52c3;
-		padding: 0px;
-		box-shadow: 0 0 10px black;
+		box-shadow: 0 0 10px grey;
 	}
-	#lside{
-		width:920px;
-		height:515px;
-		border-radius: 15px;
-		margin: 16px;
-		margin-right: 0px;
-		padding: 0px;
-		float: left;
-	}
-	#fengjing{
-		width: 890px;
-		height: 545px;
-		margin-left: 15px; 
-		border-radius: 15px;
-		box-shadow: 0 0 25px white;
-	}
-	#rside{
-		width: 470px;
-		height: 610px;
-		border-radius: 20px;
-		background: #e9e9eb;
-		margin: 16px;
-		float: right;
-		box-shadow: 0 0 10px black;
-	}
-	#rside li{
+	#guanyu li{
 		margin: 0px auto;
 		list-style:none;
 		text-align: center;
 		font-size: 21px;
-		font-family:"Microsoft YaHei" ;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 		padding-top: 20px;
 
 	}
-	#rside p{
+	#guanyu p{
 		padding-left: 34px;
 		padding-right: 33px;
 		padding-top: 13px;
-		font-family:"Microsoft YaHei";
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 		font-size: 18px; 
 		line-height: 1.45;
 	}
-	#maim{
-		width: 1410px;
-		height: 410px;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-		border-bottom-left-radius: 15px;
-		box-shadow: 0 0 5px white;
-		margin: 16px;
-		clear: both;
-		background: #56a6ea;
+	#man2{
+		width: 1402px;
+		height: 470px;
+		box-shadow: 0 0 15px #0f3b74;
+		box-shadow-bottom:0 0 0px black;
+		background: #0f3b74;
+		margin: 0px auto;
 	}
-	/*#tito{
-		width: 250px;
-		height: 30px;
-		background: #1a52c3;
-		margin-left: 390px;
-		margin-top: 15px;
-		border-radius: 20px;
+	#man2 img{
+		width: 680px;
+		height: 450px;
+		margin-left: 20px;
+		border-radius: 10px;
 		float: left;
-		box-shadow: 0 0 10px blue;
+		box-shadow: 0 0 10px white;
 	}
-	#tito li{
-		font-size: 20px;
-		color:white;
-		text-align: center;
-		line-height: 30px;
-		list-style: none;
-	}*/
-	#bisaijieshao{
-		width: 880px;
-		height:310px;
-		border-radius: 15px;
-		box-shadow: 0 0 20px #1a52c3;
-		padding: 20px;
-		background: #e9e9eb;
-		margin-left: 43px;
+	#zhaoxin{
+		width: 660px;
+		height: 450px;
+		float: right;
+		margin-right: 20px;
+		background: white;
+	}
+	#zhaoxin2{
+		width: 230px;
+		height: 450px;
+		float: left;
+		background: #1f5293;
+	}
+	#zhaoxin2 img{
+		width: 190px;
+		height: 190px;
 		margin-top: 20px;
-		clear: left;
-		float:left;
+		margin-bottom: 20px;
+	}
+	#wen{
+		width: 210px;
+		padding:10px;
+		height: 200px;
+	}
+	#wen p{
+		color: white;
+		font-size: 15px;
+		margin: 0px auto;
+		line-height: 30px;
+		text-align: center;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	}
+	#fubiaoti{
+		width: 430px;
+		height: 40px;
+		float: left;
+		background: #1f5293;
+		line-height: 40px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-size: 15px;
+		color: white;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	#bisaijieshao{
+		width: 380px;
+		height:180px;
+		padding: 20px;
+		float: right;
 		list-style: none;
 	}
 	#bisaijieshao li{
-		font-size: 20px;
-		line-height: 36px;
+		font-size: 14px;
+		line-height: 30px;
 		margin-top: 5px;
 
 	}
-	#weixingongzhong{
-		width: 400px;
-		height: 410px;
-		border-radius: 15px;
-		margin-top:0px;
-		float: right;
+	#xinwen{
+		width: 1402px;
+		height: 470px;
 		background: white;
-		box-shadow: 0 0 20px white;
-	}
-	#weixin{
-		height: 60px;
-		line-height: 60px;
-		text-align: center;
-		margin: 0px auto;
-		font-size: 20px;
-		list-style-type: none;
-	}
-	.xuan{
-		list-style: none;
-		height: 50px;
-		line-height: 50px;
-		margin: 0px auto;
-		text-align: center;
-		font-size: 15px;
-	}
-	#weixingongzhong img{
-		width: 120px;
-		height: 120px;
 		margin: 0px auto;
 	}
-	#haibao{
-		margin-top: 10px;
-	}
-	#haibao img{
-		width: 1440px;
-		height: 450px;
-		border-radius: 15px;
-		box-shadow: 0 0 20px orange;
-		margin-top: 10px;
-		margin: 0px auto;
-	}
-	#bisaineirong{
-		width: 1440px;
-		height: 400px;
-		margin: 0px auto;
-		margin-top: 15px;
+	#xinwen-left{
+		width: 600px;
+		height: 420px;
+		background: white;
+		float: left;
 
 	}
-	#bisaitu img{
-		width: 800px;
-		height: 400px;
-		float: left;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
-		box-shadow: 0 0 12px black;
-	}
-	#xiaoxilan{
-		width: 640px;
-		height: 400px;
-		float: left;
-		box-shadow: 0 0 5px black;
-		border-top-right-radius: 15px;
-		border-bottom-right-radius: 15px;
-	}
-	#zuixin{
-		width: 640px;
-		height: 50px;
-		background: url(./img/huise.jpg);
-		border-top-right-radius: 15px;
-	}
-	#zuixin li{
+	#h1{
+		width: 120px;
+		height: 60px;
+		border-bottom: 3px solid #0f3b74;
 		font-size: 20px;
-		font-family: "Georgia";
-		line-height: 50px;
-		margin: 0px auto;
+		margin-top: 10px;
 		text-align: center;
-		list-style: none;
+		line-height: 60px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 	}
 	#neihang{
-		width: 640px;
-		height: 340px;
-		margin-top: 5px;
-		padding-top: 5px;
-		background: url(./img/huise.jpg);
-		border-bottom-right-radius: 15px;
+		width: 600px;
+		height: 450px;
+		margin-top:20px;
+		margin-left: 5px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-size: 17px;
+		color:#004eac;
+		list-style:none;
 	}
 	#neihang li{
-		font-size: 17px;
-		font-family: "Georgia";
-		line-height: 45px;
-		text-align: left;
-		margin-left: 30px;
 		list-style: none;
-
-	} 
+		line-height: 45px;
+	}
 	#neihang a{
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-size: 17px;
 		color: black;
 	}
-	#footer{
-		width: 1440px;
-		height: 330px;
-		background: #1a52c3;
-		border-radius: 15px; 
-		padding-top: 5px;
-		margin:0px auto;
-		margin-top: 15px;
-		box-shadow: 0 0 10px black;
-	}
-	#xiangguanwangzhan{
-		width: 140PX;
-		height: 60PX;
-		text-align: center;
-		margin: 0px auto;
-		margin-top: 10px;
-		margin-bottom: 15px;
+	#neihang a:hover{
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-size: 17px;
 		margin-left: 10px;
-		border-radius: 15px;
-		background: #29b8ec;
-		float: left;
+		color: #004eac ;
 	}
-	#xiangguanwangzhan li{
-		font-size: 23px;
-		font-style: "YaHei";
-		line-height:60px;
-		list-style: none;
-	}
-	#henggang1{
-		width: 600px;
-		height: 7px;
-		float: left;
-		border-radius: 10px;
-		margin-top: 35px;
-		margin-left: 40px;
-		background: #29b8ec;
-		box-shadow: 0 0 7px black;
-	}
-	#henggang2{
-		width: 600px;
-		height: 7px;
+	#xinwen-right{
+		width: 750px;
+		height: 450px;
 		float: right;
-		border-radius: 10px;
-		margin-top: 35px;
-		margin-right: 40px;
-		background: #29b8ec;
-		box-shadow: 0 0 7px black;
-	}
-	#wangzhanzong{
-		width: 1380px;
-		height: 200px;
-		background: #29b8ec;
-		clear: both;
-		margin: 0px auto;
-		padding-top: 17px; 
-		border-radius: 15px;
-		box-shadow: 0 0 7px black;
-	}
-	#wangzhanzong img{
-		width: 195px;
-		height: 123px;
-		margin-left: 50px;
-		margin-right: 25px;
-		margin-top: 26px;
-		float: left;
-	}
-	#re img{
-		width: 200px;
-		height: 180px;
-		margin-left: 30px;
-		margin-top: 4px;
-		float: left;
-	}
-	#bottomer{
-		width: 1515px;
-		margin: 0px auto;
-		padding-top: 30px;
-		padding-bottom: 45px;
-		border-color: white;
-		background: url(./img/beijingse2.jpg);
-		box-shadow: 0 0 100px #5597e0;
-		border-radius: 15px;
-	}
-	#bottomer li{
-		font-size: 16px;
-		margin: 0px auto;
-		margin-top: 15px;
 		text-align: center;
-		list-style: none;
+		margin-top: 40px;
 	}
-	#kongyuan img{
-		width:220px;
-		margin-top: 45px;
-		height: 95px;
+	#foote{
+		width: 100%;
+		height: 330px;
+		background: url(./img/footerBg.jpg);
+		background-size: 100% 100%;
+
+		background-repeat: no-repeat;
+		margin: 0px auto;
+		margin-top: 5px;
+
 	}
-	#tit{
-		width: 920px;
-		height: 55px;
-		margin-top: 23px;
+	#contain{
+		width: 1700px;
+		height: 280px;
+		margin: 0px auto;
+		padding-top: 50px;
+		
+	}
+	#foote-left{
+		width: 530px;
+		height: 230px;
 		float: left;
-		background: #56a6ea;
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-		box-shadow: 0 0 5px white;
-	}
-	#tit li{
-		font-size: 22px;
+		margin-left: 180px;
 		color:white;
+		border-right: 1px solid white;
+	}
+	#foote-left h1{
+		font-size: 23px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		margin-top: 25px;
+		margin-bottom: 18px;
+	}
+	#foote-left p{
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-size: 15px;
+		line-height: 32px;
+	}
+	#foote-right{
+		width: 900px;
+		height: 230px;
+		float: left;
+	}
+	#youqingtishi{
+		width: 95px;
+		height: 50px;
 		text-align: center;
-		line-height: 75px;
+		margin-top: 10px;
+		margin-left: 140px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid white;
+		float: left;
+		font-size: 21px;
+		line-height: 50px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		color:white;
+	}
+	#lianjie{
+		width: 700px;
+		height: 150px;
+		clear: left;
+		margin-left: 140px;
 		list-style: none;
+	}
+	#lianjie li{
+		width: 170px;
+		height: 35px;
+		line-height: 35px;
+		float: left;
+	}
+	#lianjie a{
+		color: white;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		font-size: 14px;
 	}
 </style>
 </head>
-
 <body>
-	<div id="zhuye">
+	<div id="ZHUYE">
 		<div id="container">
 			<div id="header">
-				<div id="heal">
-					<img src="./img/header.jpg">
+				<div id="head">
+					<div id="header-left">
+						<img src="./img/logo1.png">
+					</div>
+					<div id="footer">
+
+				<div id="foot">
+					<div class="showTime"><b>当前时间：2021年2月19-20时35分16秒</b></div>
+					<a><b>东北大学秦皇岛分校控制工程学院 Robocon实验室</b></a>
 				</div>
-				<div id="hear">
-					<div id="daohang">
+			</div>
+					<div id="header-right">
 						<li><a href="./index/wangjiejiaji.html" title="往届佳绩" target="_blank"><b>往届佳绩</b></a></li>
 						<li><a href="./index/chengyuanzonglan.html" title="成员总览" target="_blank" ><b>成员总览</b></a></li>
-						<li><a href="./index/jiechuduiyuan.html" title="团队队员" target="_blank" ><b>团队队员</b></a></li>
+						<li><a href="./index/jiechuduiyuan.html" title="杰出队员" target="_blank" ><b>杰出队员</b></a></li>
 						<li><a href="./index/jinglifenxiang.html" title="经历分享" target="_blank" ><b>经历分享</b></a></li>
 						<li><a href="./index/20_zhaoxin.html" title="招新活动" target="_blank" ><b>招新活动</b></a></li>
 						<li><a href="./index/richangxinxi.html" title="日常信息" target="_blank" ><b>日常信息</b></a></li>
@@ -400,92 +402,100 @@
 				</div>
 			</div>
 			<div id="main">
-				<div id="lside">
-					<a href="./index/shipin.html"><img id="fengjing" src="./img/lys06.jpg"></a>
-					<div id="tit">
-						<li><b>全 &nbsp国 &nbsp大 &nbsp学 &nbsp生 &nbsp机 &nbsp器 &nbsp人 &nbsp大 &nbsp赛</b></li>
+				<div id="man">
+					<img src="./img/hezhao.jpg">
+					<div id="guanyu">
+						<li><b>关于我们</b></li>
+						<p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp东北大学秦皇岛分校ROBO控实验室成立于2017年，是一个以各种机器人比赛为项目依托，由老师带队负责，为爱好机器人的学生提供了一个培养团结协作，自主进行设计和打造多功能机器人的实验室平台。在实验室里，学生们可以与知识交互零距离，在实践中收获电子、机械、算法等硬核技术，并在协作中提升团队意识和管理能力。</p>
+						<p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp实验室荣获东北大学秦皇岛分校优秀团队称号，每年代表东北大学秦皇岛分校在全国robocon比赛上均获得国家级荣誉奖项。目前实验室团队每年30人以上，平均每人荣获国家级奖项3项以上。在2019年电子设计大赛中，我校9人荣获大赛一等奖，其中7人均为robocon实验室成员。我校控制工程学院竞赛保研的学生中，大多数都有过在robocon实验室学习的经历。</p>
+						<p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp实验室将会为学生提供很多的培训机会，让学生完成从对比赛知之甚少到独当一面的全面转变。我们将不断努力，将知行合一进行到底！</p>
 					</div>
+					
 				</div>
-				<div id="rside">
-					<li><b>关于我们</b></li>
-					<p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp东北大学秦皇岛分校ROBOCON机器人实验室成立于2017年，是一个以各种机器人比赛为项目依托，由老师带队负责，为爱好机器人的学生提供了一个培养团结协作，自主进行设计和打造多功能机器人的实验室平台。在实验室里，学生们可以与知识交互零距离，在实践中收获电子、机械、算法等硬核技术，并在协作中提升团队意识和管理能力。</p>
-					<p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp实验室荣获东北大学秦皇岛分校优秀团队称号，每年代表东北大学秦皇岛分校在全国robocon比赛上均获得国家级荣誉奖项。目前实验室团队每年人数20多人，平均每人荣获国家级奖项3项以上。在2019年电子设计大赛中，我校9人荣获大赛一等奖，其中7人均为robocon实验室成员。我校控制工程学院竞赛保研的学生中，大多数都有过在robocon实验室学习的经历。</p>
-					<p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp实验室将会为学生提供很多的培训机会，让学生完成从对比赛知之甚少到独当一面的全面转变。我们将不断努力，将知行合一进行到底！</p>
+				<div id="man2">
+					<img src="./img/jingsai.jpg">
+					<div id="zhaoxin">
+						<div id="zhaoxin2">
+							<img src="./img/weixin.jpg">
+							<div id="wen"><p><b>实验室微信公众号上线啦！</b></p>
+								<p>获取最新比赛动态</p>
+								<P>领略更多团队风采</P>
+								<p>了解更多技术和知识分享</p>
+
+								<p>关注更多招新和比赛信息</p>
+								<p><b>欢迎关注!</b></p>
+							</div>
+							
+						</div>
+						<div id="fubiaoti">
+								<p><b>关于全国大学生机器人大赛（ROBOCON)</b></p>
+							</div>
+							<div id="bisaijieshao">
+							<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp机器人研发需配备有角磨机、冲击钻、台虎钳、电锯等机械加工工具，焊台、热风枪、示波器、直流电源等电子电路加工工具，以及专门用于进行智能算法测试的电脑、服务器等。实验室将联合机械类竞赛和电子类竞赛的优秀参赛成员，以“Domkin”机器人团队备赛。</li>
+							<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp赛方会在每年秋季公布题目，团队将利用9个月的时间制作机器人，次年6-7月举行比赛。因此，参赛选手需提前储备知识，组建机器人团队，并开展作品的制作。选手主要面向机械类、自动化类、电信类专业学生。我们建议有意向同学在大一入学时就应该开始预习或选修相关创新类课程（推荐3D打印、电子技术基础知识、C语言、Arduino或单片机），并加入相关团队，在实践中不断提升。</li>
+						</div>
+					</div>
 
 				</div>
-				<div id="maim">
-					<div id="bisaijieshao">
-						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp机器人研发需配备有角磨机、冲击钻、台虎钳、电锯、电钻、气泵等机械加工工具，焊台、热风枪、示波器、直流电源等电子电路加工工具，以及专门用于进行智能算法测试的电脑、服务器等。实验室将联合机械类竞赛和电子类竞赛的优秀参赛成员，以“Domkin”机器人团队的形式备赛。</li>
-						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp赛方会在每年秋季公布题目，参赛团队将利用9个月的时间制作机器人，次年6月举行比赛。因此，参赛选手需提前储备知识，组建机器人团队，并开展作品的制作。选手主要面向机械类、自动化类、电信类专业学生。我们建议有意向同学在大一入学时就应该开始预习或选修相关创新类课程（推荐3D打印、电子技术基础知识、C语言、Arduino或单片机），并加入相关团队，在实践中不断提升。</li>
+				<div id="xinwen">
+					<div id="xinwen-left">
+						<div id="h1"><b>实验室新闻</b></div>
+						<div id="neihang">
+							<li><span "font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;font-color:#004eac">2020-10-01&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/touhumashuhuojiang.html">Domkin团队获得马术赛二等奖投壶三等奖！</a></li>
+							<li><span style="font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;">2020-10-01&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/shuangjie.html">实验室双节团聚，砥砺前行向前冲！</a></li>
+							<li><span style="font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;">2020-08-30&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/mashusaihuojiang.html">东秦domkin战队1天备战马术赛，获得全国三等奖成绩！</a></li>
+							<li><span style="font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;">2020-08-26&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/20_zhaoxin.html">东秦robocon实验室20级招新正在进行中！</a></li>
+							<li><span style="font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;">2020-08-29&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/lvyinsai.html">robocon绿茵争锋比赛进行时</a></li>
+							<li><span style="font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;">2020-08-19&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/mashusai.html">robocon马术仿真赛比赛信息</a></li>
+							<li><span style="font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;font-size:17px;">2020-08-17&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/zhaoxinhuodong.html">东秦robocon实验室备赛招新活动</a></li>
+						</div>
 					</div>
-					<div id="weixingongzhong">
-						<li id="weixin">robocon实验室微信公众平台上线啦！</li>
-						<li class="xuan">想要获得最新的赛事动态吗</li>
-						<li class="xuan">想要了解东秦ROBOer们的风采吗</li>
-						<li class="xuan">想要获取最新招新动态吗</li>
-						<li class="xuan">请关注“domkin”战队微信公众号，我们期待您的加入</li>
-						<img src="./img/weixin.jpg">
+					<div id="xinwen-right">
+						<video width="700px" autoplay="autoplay" controls="controls">
+							<source src="./video/robocon20.mp4" type="video/mp4"></source>
+						</video>
 					</div>
 				</div>
-			</div>
-			<div id="haibaol">
-				<a href=""><img src=""></a>
-			</div>
-			<div id="bisaineirong">
-				<div id="bisaitu">
-					<a href="./index/touhu.html"><img src="./img/20th.jpg"></a>
 
+			</div>
+			<div id="foote">
+			<div id="contain">
+				<div id="foote-left">
+					<h1><b>东北大学秦皇岛分校Robocon实验室</b></h1>
+					<p>微信公众号：domkin战队</p>
+					<p>qq公众号：3289270752</p>
+					<p>邮编：066004</p>
+					<P>地址：河北省秦皇岛市经济技术开发区泰山路143号</P>
+					
 				</div>
-				<div id="xiaoxilan">
-					<div id="zuixin">
-						<li><b>最 新 信 息</b></li>
+				<div id="foote-right">
+					<div id="youqingtishi">
+						<b>友情链接</b>
 					</div>
-					<div id="neihang">
-						<li><span style="font-family: Georgia;font-size:17px;">2021年08月1日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/touhumashuhuojiang.html">domkin团队获得马术二等奖投壶三等奖！</a></li>
-						<li><span style="font-family: Georgia;font-size:17px;">2020年11月18日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/touhu.html">关于举办第二十届全国大学生机器人大赛的通知</a></li>
-						<li><span style="font-family: Georgia;font-size:17px;">2020年10月31日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/lvyinsaihuojiang.html">东秦domkin战队获得绿茵赛二等奖！</a></li>
-						<li><span style="font-family: Georgia;font-size:17px;">2020年10月01日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/shuangjie.html">实验室双节团聚，砥砺前行向前冲！</a></li>
-						<li><span style="font-family: Georgia;font-size:17px;">2020年08月30日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/mashusaihuojiang.html">东秦domkin战队获得第十九届马术赛全国三等奖成绩！</a></li>
-						<li><span style="font-family: Georgia;font-size:17px;">2020年08月26日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/20_zhaoxin.html">东秦robocon实验室20级招新正在进行中！</a></li>
-						<li><span style="font-family: Georgia;font-size:17px;">2020年08月29日&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp</span><a href="./index/lvyinsai.html">robocon绿茵争锋比赛进行时</a></li>
-						
-						
+					<div id="lianjie">
+						<li><a href="http://www.neu.edu.cn/">东北大学</a></li>
+						<li><a href="https://www.neuq.edu.cn/">东北大学秦皇岛分校</a></li>
+						<li><a href="http://kzgc.neuq.edu.cn/">控制工程学院</a></li>
+						<li><a href="http://cxcyzx.neuq.edu.cn/">大学生创新创业中心</a></li>
+						<li><a href="http://www.cnrobocon.net/#/">Robcon官方网站</a></li>
+						<li><a href="http://ask.cnrobocon.net/">Robcon官方论坛</a></li>
+						<li><a href="http://www.cammt.org.cn/">中国机械制造工艺协会</a></li>
+						<li><a href="http://www.caa.org.cn/">中国自动化学会</a></li>
+						<li><a href="https://www.solidworks.com/zh-hans">SolidWorks官方网站</a></li>
+						<li><a href="https://www.solidworks.com.cn/sw/support/797_CHS_HTML.htm">CSWP工程师认证</a></li>
 					</div>
+					
 				</div>
+			 </div>
+				
 			</div>
-			<div id="footer">
-				<div id="henggang1"></div>
-				<div id="xiangguanwangzhan"><li><B>友情链接</B></li></div>
-				<div id="henggang2"></div>
-				<div id="wangzhanzong">
-					<a title="robocon官网" target="_blank" href="http://www.cnrobocon.net/#/"><img src="./img/robocon.jpg"></a>
-					<a title="robocon论坛" target="_blank" href="http://ask.cnrobocon.net/"><img src="./img/luntan.jpg"></a>
-					<a title="东北大学秦皇岛分校" target="_blank" href="https://www.neuq.edu.cn/"><img src="./img/fenxiao.jpg"></a>
-					<a id="kongyuan" title="东北大学秦皇岛分校控制工程学院" target="_blank" href="http://kzgc.neuq.edu.cn/"><img src="./img/kongzhigongchengxueyuan.jpg"></a>
-					<a id="re" title="东北大学" target="_blank" href="http://www.neu.edu.cn/"><img src="./img/dongbeidaxue.jpg"></a>
-				</div>
-			</div>
-			<div class ="glass">  
-				 <ul class ="dock">
-					 <li><b>自</b></li>
-					 <li><b>强</b></li>
-					 <li><b>不</b></li>
-					 <li><b>息</b></li>
-					 <li>&nbsp</li>
-					 <li><b>知</b></li>
-					 <li><b>行</b></li>
-					 <li><b>合</b></li>
-					 <li><b>一</b></li>
-				</ul>
-			</div>
-			<div id="bottomer">
-				<li>(冀）东北大学秦皇岛分校Robocon实验室</li>
-				<li>通信地址：河北省秦皇岛市经济技术开发区泰山路143号</li>
-				<li>微信公众号：domkin战队（gh_b48b244c1b74)</li>
-				<li>qq公众号：3289270752</li>
-			</div>
+		
+			
 		</div>
 	</div>
-	<script  src="./script.js"></script>
+
+
+
+
 </body>
 </html>
